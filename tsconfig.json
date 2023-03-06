@@ -22,7 +22,7 @@
       "incremental": true,
       "noUnusedLocals": false,
       "strictPropertyInitialization": false,
-      "declarationDir": "./build/types"
+      "declarationDir": "./build/"
     },
     "include": ["src/**/*.ts"],
     "exclude": ["build", "node_modules"],
