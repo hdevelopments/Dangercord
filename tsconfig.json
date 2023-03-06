@@ -2,8 +2,7 @@
     "compilerOptions": {
       "target": "esnext",
       "module": "esnext",
-      "outDir": "build",
-      "lib": ["ES2022", "DOM"],
+      "outDir": "build/src",
       "rootDir": "src",
       "strict": true,
       "moduleResolution": "node",
@@ -22,7 +21,7 @@
       "incremental": true,
       "noUnusedLocals": false,
       "strictPropertyInitialization": false,
-      "declarationDir": "./build/"
+      "declarationDir": "./build/types",
     },
     "include": ["src/**/*.ts"],
     "exclude": ["build", "node_modules"],
