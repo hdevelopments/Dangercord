@@ -2,23 +2,16 @@
   "name": "dangercord",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
-  "main": "./build/src/main",
+  "main": "lib/main.js",
   "scripts": {
-    "build": "tsc"
+    "build": "del lib && tsc -p ."
   },
-  "types": "./build/types/main.d.ts",
-  "directories": {
-    "lib": "./build/src"
-  },
+  "types": "lib/main.d.ts",
   "keywords": [
     "dangercord",
     "discord"
   ],
-  "files": [
-    "build"
-  ],
-  "author": "",
+  "author": "Rooki",
   "license": "ISC",
   "devDependencies": {
     "typescript": "^4.9.5"

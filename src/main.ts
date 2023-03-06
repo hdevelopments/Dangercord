@@ -6,8 +6,8 @@ import DangercordResponse, {
 
 export default class Dangercord {
   private apiToken: string = "";
-  private headers?: AxiosHeaders = {} as AxiosHeaders;
-  constructor(apiToken: string, headers: AxiosHeaders = {} as AxiosHeaders) {
+  private headers?: typeof AxiosHeaders = {} as typeof AxiosHeaders;
+  constructor(apiToken: string, headers: typeof AxiosHeaders = {} as typeof AxiosHeaders) {
     if (!apiToken) throw new Error("apiToken is required!");
     this.headers = headers;
     this.apiToken = apiToken;

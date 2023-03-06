@@ -39,3 +39,4 @@ export interface DangercordErrorResponse {
     code: number;
     message: string;
 }
+//# sourceMappingURL=Dangercord.d.ts.map
