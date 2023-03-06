@@ -1,10 +1,10 @@
-import axios, { Axios, AxiosHeaders } from "axios";
+import axios, { AxiosHeaders } from "axios";
 import DangercordResponse, {
-  DangercordErrorResponse,
+    DangercordErrorResponse,
   DangercordReportUserParams,
 } from "./models/Dangercord";
 
-class Dangercord {
+export default class Dangercord {
   private apiToken: string = "";
   private headers?: AxiosHeaders = {} as AxiosHeaders;
   constructor(apiToken: string, headers?: AxiosHeaders) {

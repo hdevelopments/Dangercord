@@ -35,3 +35,8 @@ export interface DangercordReportUserParams {
     category: DangercordReportCategories,
     reason: string
 }
+export interface DangercordErrorResponse {
+    error: boolean,
+    code: number,
+    message: string
+}

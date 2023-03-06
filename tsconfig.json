@@ -22,14 +22,9 @@
       "incremental": true,
       "noUnusedLocals": false,
       "strictPropertyInitialization": false,
-      "declarationDir": "./src/types"
+      "declarationDir": "./build/types"
     },
     "include": ["src/**/*.ts"],
     "exclude": ["build", "node_modules"],
-    "ts-node": {
-      "esm": true,
-      "experimentalSpecifierResolution": "node",
-      "files": true,
-    }
   }
   
