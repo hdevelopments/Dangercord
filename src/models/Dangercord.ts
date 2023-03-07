@@ -7,7 +7,7 @@ export default interface DangercordResponse {
   last_reported?: number;
   badges: DangerCordBadges;
   votes: { upvotes: number; downvotes: number };
-  flags: DangerCordFlags;
+  flags?: DangerCordFlags;
 }
 
 export interface DangerCordFlags {

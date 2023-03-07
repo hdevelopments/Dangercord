@@ -2,7 +2,7 @@ import axios, { AxiosHeaders } from "axios";
 import DangercordResponse, {
   DangercordErrorResponse,
   DangercordReportUserParams,
-} from "./models/Dangercord";
+} from "./models/Dangercord.js";
 
 export default class Dangercord {
   private apiToken: string = "";
