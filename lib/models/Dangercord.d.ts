@@ -1,4 +1,4 @@
-export default interface DangercordResponse {
+export interface DangercordResponse {
     id: string;
     username: string;
     avatar?: string;
@@ -10,7 +10,7 @@ export default interface DangercordResponse {
         upvotes: number;
         downvotes: number;
     };
-    flags: DangerCordFlags;
+    flags?: DangerCordFlags;
 }
 export interface DangerCordFlags {
     spammer: boolean;

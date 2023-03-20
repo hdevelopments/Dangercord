@@ -1,4 +1,4 @@
-export default interface DangercordResponse {
+export interface DangercordResponse {
   id: string;
   username: string;
   avatar?: string;

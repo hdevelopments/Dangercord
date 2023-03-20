@@ -1,5 +1,5 @@
 import { AxiosHeaders } from "axios";
-import DangercordResponse, { DangercordReportUserParams } from "./models/Dangercord.js";
+import { DangercordResponse, DangercordReportUserParams } from "./models/Dangercord.js";
 export default class Dangercord {
     private apiToken;
     private headers?;
