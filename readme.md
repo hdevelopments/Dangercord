@@ -6,7 +6,7 @@ For improvement ideas or bugs please let me know on github!
 
 Contact:
 
-Discord: Rooki#6969
+Discord: @roooooooooooooooooooooooooooooki
 
 Github: <https://github.com/hdevelopments/Dangercord>
 
