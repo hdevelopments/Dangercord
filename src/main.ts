@@ -7,24 +7,21 @@ import {
 
 export default class Dangercord {
   private apiToken: string = "";
-  private headers?: typeof AxiosHeaders = {} as typeof AxiosHeaders;
+  private headers?: AxiosHeaders = {} as AxiosHeaders;
   constructor(
     apiToken: string,
-    headers: typeof AxiosHeaders = {} as typeof AxiosHeaders
+    headers: AxiosHeaders = {} as AxiosHeaders
   ) {
     if (!apiToken) throw new Error("apiToken is required!");
-    this.headers = headers;
-    this.apiToken = apiToken;
+    this.headers = headers || {};
+    this.headers.setAuthorization(`Bearer ${this.apiToken}`)
   }
 
   async getCurrentUser() {
     try {
       return (
         await axios.get(`https://dangercord.com/api/v1/user/@me`, {
-          headers: {
-            ...this.headers,
-            Authorization: `Bearer ${this.apiToken}`,
-          },
+          headers: this.headers,
         })
       ).data as DangercordResponse;
     } catch (exc: any) {
@@ -36,10 +33,7 @@ export default class Dangercord {
     if (!userId) throw new Error("userId is required!");
     return (
       await axios.get(`https://dangercord.com/api/v1/user/${userId}`, {
-        headers: {
-          ...this.headers,
-          Authorization: `Bearer ${this.apiToken}`,
-        },
+        headers: this.headers,
       })
     ).data as DangercordResponse;
   }
@@ -51,10 +45,7 @@ export default class Dangercord {
         `https://dangercord.com/api/v1/user/${userId}/report`,
         data,
         {
-          headers: {
-            ...this.headers,
-            Authorization: `Bearer ${this.apiToken}`,
-          },
+          headers: this.headers,
         }
       )
     ).data as DangercordResponse;
