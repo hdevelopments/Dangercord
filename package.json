@@ -5,7 +5,7 @@
   "main": "lib/main.js",
   "type": "module",
   "scripts": {
-    "build": "del lib && tsc -p ."
+    "build": "rm lib && tsc -p ."
   },
   "types": "lib/main.d.ts",
   "keywords": [
