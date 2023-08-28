@@ -1,3 +1,5 @@
+[![Node.js Package](https://github.com/hdevelopments/Dangercord/actions/workflows/npm-publish.yml/badge.svg?branch=master)](https://github.com/hdevelopments/Dangercord/actions/workflows/npm-publish.yml)
+
 # Dangercord
 
 This is just a very smolll npm package for [dangercord](https://dangercord.com/).
