@@ -7,10 +7,10 @@ import {
 
 export default class Dangercord {
   private apiToken: string = "";
-  private headers?: AxiosHeaders = {} as AxiosHeaders;
+  private headers?: AxiosHeaders = new AxiosHeaders();
   constructor(
     apiToken: string,
-    headers: AxiosHeaders = {} as AxiosHeaders
+    headers: AxiosHeaders = new AxiosHeaders()
   ) {
     if (!apiToken) throw new Error("apiToken is required!");
     this.headers = headers || {};
